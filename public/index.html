@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link type="text/css" rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneRepMax Calculator</title>
+</head>
+<body>
+
+  <header>
+    One Rep Max Calculator
+    <div>
+      <img id="bench" src="/bench.jpg" alt="Person Benching">
+    </div>
+  </header>
+
+  <div class="standards">
+    <h3>Strength Standards</h3>
+    <p> These are the male strength standards for the main 3 compound lifts relative to body weight</p>
+    <table>
+      <tr>
+        <td>Exercise</td>
+        <td>Decent</td>
+        <td>Good</td>
+        <td>Great</td>
+      </tr>
+      <tr>
+        <td>Squat</td>
+        <td>1.5xBW</td>
+        <td>2xBW</td>
+        <td>2.5xBW</td>
+      </tr>
+      <tr>
+        <td>Bench Press</td>
+        <td>1.25xBW</td>
+        <td>1.5xBW</td>
+        <td>2xBW</td>
+      </tr>
+      <tr>
+        <td>Deadlift</td>
+        <td>1.5xBW</td>
+        <td>2xBW</td>
+        <td>2.75xBW</td>
+      </tr>
+
+
+    </table>
+
+
+  </div>
+
+  <div class="calculator">
+    <form id="form" class="submission-form" type="text">
+      <fieldset>
+        <legend>How Much Do You Lift?</legend>
+      <input id="w1" type="text" name="weight" placeholder="Weight">
+      <input id="r1" type="text" name="reps" placeholder="Reps">
+      <br><br>
+        <input id="submitbutton" type="submit" value="Calculate One Rep Max">
+      </fieldset>
+    </form>
+  </div>
+`
+
+
+  <footer>
+    <div class="about">
+      <h5>About</h5>
+      <p class="text1">
+          This is a One Rep Max calculator and works by using the Epley formula for all one rep max calculations<br><br>
+          <a href="https://www.vcalc.com/equation/?uuid=69e95e46-117e-11e7-9770-bc764e2038f2" >Epley Formula</a>
+
+      </p>
+    </div>
+
+  </footer>
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
