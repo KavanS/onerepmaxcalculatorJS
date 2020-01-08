@@ -2,10 +2,16 @@
 function processForm(e) {
     if (e.preventDefault) e.preventDefault();
 
+    var divHeader = document.getElementById('output');
+    divHeader.innerHTML = "";
     var weight = document.getElementById("w1").value;
     var reps = document.getElementById("r1").value;
     max = calculateMax(weight,reps);
-    alert("Estimated One Rep Max is " + max);
+    max = Math.floor(calculateMax(weight,reps));
+    var outputmax = document.createTextNode("Estimated One Rep Max " + max + " lbs") ;
+    var spanHeader = document.createElement('span');
+    spanHeader.appendChild(outputmax)
+    divHeader.appendChild(spanHeader);
     return false;
 }
 
