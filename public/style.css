@@ -13,6 +13,12 @@ header {
     color: rgb(206, 159, 58);
 }
 
+#output {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    color: red;
+}
+
 
 #bench{
     width: 85%;
