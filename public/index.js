@@ -6,18 +6,12 @@ function processForm(e) {
     divHeader.innerHTML = "";
     var weight = document.getElementById("w1").value;
     var reps = document.getElementById("r1").value;
-    if(Number.isInteger(weight) && Number.isInteger(reps)) {
-        max = calculateMax(weight,reps);
-        max = Math.floor(calculateMax(weight,reps));
-        var outputmax = document.createTextNode("Estimated One Rep Max " + max + " lbs") ;
-        var spanHeader = document.createElement('span');
-        spanHeader.appendChild(outputmax)
-        divHeader.appendChild(spanHeader);
-    }
-    else {
-        alert("Please enter a integer");
-    }
-    
+    max = calculateMax(weight,reps);
+    max = Math.floor(calculateMax(weight,reps));
+    var outputmax = document.createTextNode("Estimated One Rep Max " + max + " lbs") ;
+    var spanHeader = document.createElement('span');
+    spanHeader.appendChild(outputmax)
+    divHeader.appendChild(spanHeader);
     return false;
 }
 
